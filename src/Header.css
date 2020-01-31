@@ -1,0 +1,39 @@
+.header{
+    background-image: linear-gradient(#DDF2D8, #F2DBAE, #F2AF88, #D97D5B);
+    height: 100vh;
+    padding: 10%;
+    
+}
+.inner-header{
+    border: 2px solid white;
+    padding: 10%;
+}
+
+.header-text{
+    width: 70%;
+    margin: auto;
+    
+}
+
+.main-button-section{
+    padding: 20px;
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    
+}
+
+.main-button{
+    width: 200px;
+    height: 100px;
+    font-size: 1.5em;
+    background: transparent;
+    border: 1px solid white;
+    color: black;
+
+}
+.main-button:hover, .main-button:visited, .main-button:active, .btn-primary:hover, .btn-primary:active, .btn-primary:visited , .btn-primary:focus{
+    border: 1px solid white !important;;
+    background:  #D97D5B !important;;
+    color: black !important;;
+}
