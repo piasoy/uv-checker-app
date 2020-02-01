@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.css';
 import Button from 'react-bootstrap/Button'
 import { API_KEY } from './utils/Key';
+import Results from './Results.js';
 
 class Header extends React.Component {
 
@@ -58,6 +59,7 @@ class Header extends React.Component {
 
     render() {
         console.log('state:', this.state)
+        const { uvIndex } = this.state;
         return (
            
                 <div className="header">
@@ -70,6 +72,7 @@ class Header extends React.Component {
                             <Button className="main-button" onClick={this.handleClick}>Get today's<br />UV Analysis </Button>
                         </div>
                     </div>
+                    <Results uvIndex={uvIndex} />
                     
                 </div> 
                 

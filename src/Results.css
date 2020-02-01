@@ -1,0 +1,12 @@
+.analysis{
+    border: 2px solid white;
+    padding: 10%;
+}
+
+.analysis h1{
+    text-align: center;
+}
+
+td{
+    font-size: 1em;
+}
