@@ -25,17 +25,18 @@ function Results({uvIndex}) {
   return (
     <div className="analysis">
         <h1>UV Index Analysis</h1>
+        <br />
         <table>
             <tr>
-                <td>Today's UV index:</td>
+                <td className="col1">Today's UV index</td>
                 <td>{uvIndex}</td>
             </tr>
             <tr>
-                <td>Risk</td>
-                <td>The risk of harm from unprotected Sun exposure, for the average adult is <b>{risk}</b></td>
+                <td className="col1">Risk</td>
+                <td>The risk of harm from unprotected Sun exposure for the average adult is <b>{risk}</b></td>
             </tr>
             <tr>
-                <td>Advice</td>
+                <td className="col1">Advice</td>
                 <td>According to the World Health Organization, you should {uvRec[risk]}</td>
             </tr>
         </table>

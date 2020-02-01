@@ -10,30 +10,22 @@
 }
 
 .header-text{
-    width: 70%;
-    margin: auto;
-    
-}
-
-.main-button-section{
-    padding: 20px;
-    width: 200px;
-    height: 100px;
-    margin: auto;
-    
+    margin: auto;  
 }
 
 .main-button{
-    width: 200px;
-    height: 100px;
+    width: 400px;
+    height: 75px;
     font-size: 1.5em;
-    background: transparent;
-    border: 1px solid white;
-    color: black;
+    border: 1px solid #D97D5B ;
+    background:  #D97D5B !important;
+    color: white !important;
+    margin-top: 20px;
+    text-align: center;
 
 }
 .main-button:hover, .main-button:visited, .main-button:active, .btn-primary:hover, .btn-primary:active, .btn-primary:visited , .btn-primary:focus{
-    border: 1px solid white !important;;
-    background:  #D97D5B !important;;
+    border: 1px solid white !important;
+    background: transparent !important;
     color: black !important;;
 }

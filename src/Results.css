@@ -1,12 +1,16 @@
-.analysis{
-    border: 2px solid white;
-    padding: 10%;
-}
 
 .analysis h1{
     text-align: center;
 }
 
 td{
-    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    padding: 1%;
+    border: 1px solid white;
 }
+
+.col1{
+    width: 25%;  
+}
+

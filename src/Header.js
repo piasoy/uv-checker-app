@@ -63,17 +63,20 @@ class Header extends React.Component {
         return (
            
                 <div className="header">
-                    <div className="inner-header">
-                        <div className="header-text">
-                            <h1>SUNSHADE</h1>
-                            <h3>analyzes the daily UV index and provides you with tips to minimize risk of sunburn and other uv-related health risks.</h3>             
-                        </div>
-                        <div className="main-button-section">
-                            <Button className="main-button" onClick={this.handleClick}>Get today's<br />UV Analysis </Button>
-                        </div>
-                    </div>
-                    <Results uvIndex={uvIndex} />
-                    
+                    {uvIndex ?
+                        (<Results uvIndex={uvIndex} />)
+                    :
+                        (<div className="inner-header">
+                            <div className="header-text">
+                                <h1>SUNSHADE</h1>
+                                <h3>analyzes the daily UV index and provides you with tips to minimize risk of sunburn and other uv-related health risks.</h3>             
+                            
+                            {/* <div className="main-button-section"> */}
+                                <Button className="main-button" onClick={this.handleClick}>Get today's UV Analysis </Button>
+                            {/* </div> */}
+                            </div>
+                        </div>)
+                    }
                 </div> 
                 
            
