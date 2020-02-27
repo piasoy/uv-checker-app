@@ -38,7 +38,7 @@ class Header extends React.Component {
     handleClick = () => {
         console.log('this is:', this);
         console.log('location stat:', this.state.lat, this.state.lon)
-        let url = `http://api.openweathermap.org/data/2.5/uvi?appid=${ API_KEY}&lat=${this.state.lat}&lon=${this.state.lon}`
+        let url = `http://api.openweathermap.org/data/2.5/uvi?appid=${API_KEY}&lat=${this.state.lat}&lon=${this.state.lon}`
         fetch(url)
             .then(res => res.json())
             .then(
@@ -84,3 +84,6 @@ class Header extends React.Component {
 }
 
 export default Header;
+
+
+
